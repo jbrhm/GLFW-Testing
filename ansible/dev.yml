@@ -1,0 +1,13 @@
+---
+
+#OpenGL Setup
+
+- name: OpenGL Setup
+  hosts: localhost
+  
+  tasks:
+  - name: Install OpenGL
+    become: true
+    apt:
+      state: latest
+      name: freeglut3-dev
